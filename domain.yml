@@ -1,0 +1,77 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- addmission_process
+- location_college
+- eligibility_criteria
+- courses
+entities:
+- add_process
+- ug_course
+- pg_course
+- tof_course
+- location
+- facility_type
+- eligible
+- pg_college
+- ug_college
+slots:
+  facility_eligible:
+    type: unfeaturized
+  address:
+    type: unfeaturized
+  location:
+    type: text
+  ug_course:
+    type: text
+  pg_course:
+    type: text
+  eligible: 
+    type: text
+  msg:
+    type: unfeaturized  
+
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_how_can_i_help:
+  - text: Hello I am a College Bot. I can Help you with Information of the college,the
+      courses which are available and also with the addmission process.
+  utter_eligible:
+  - text: The eligibility criteria is {facility_eligible}
+  
+
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_how_can_i_help
+- utter_eligible 
+- action_location
+#- action_eligible
+
+
+forms:
+- eligible_form
