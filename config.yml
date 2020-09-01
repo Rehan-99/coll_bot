@@ -25,5 +25,5 @@ policies:
     epochs: 100
   - name: MappingPolicy
   - name: FormPolicy
-  -name : TwoStageFallbackPolicy
+  - name : TwoStageFallbackPolicy
   

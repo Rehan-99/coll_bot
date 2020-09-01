@@ -6,38 +6,73 @@
 - good evening
 - hey there
 
+## intent:out_of_scope
+- please help with my ice cream it's dripping
+- no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+- i want a non dripping ice cream
+- someone call the police i think the bot died
+- show me a picture of a chicken
+- neither
+- I want french cuisine
+- i am hungry
+- restaurant
+- can i be shown a gluten free restaurant
+- i don't care!!!!
+- i do not care how are you
+- again?
+- oh wait i gave you my work email address can i change it?
+- hang on let me find it
+- stop it, i do not care!!!
+- how come?
+- I changed my mind
+- what?
+- did i break you
+- that link doesn't work!
+- you already have that
+- this is a really frustrating experience
+- no stop
+- give me food
+- i want food
+- Can I ask you questions first?
+- is it a wasteland full of broken robot parts?
+- can we keep chatting?
+- talk to me
+- who is your favourite robot?
+- can you help me to build a bot
+
+
 ## intent:courses
 - [Bsc](ug_course)
-- [BscIT](ug_course)
-- [BMS](ug_course)
-- [BscCS](ug_course)
+- [Bscit](ug_course)
+- [Bms](ug_course)
+- [Bsccs](ug_course)
 - [Bcom](ug_course)
-- [BAF](ug_course)
+- [Baf](ug_course)
 - [B.A](ug_course)
-- [BMM](ug_course)
-- [BBI](ug_course)
-- [BFM](ug_course)
-- [BSC.Biotechnology](ug_course)
+- [Bmm](ug_course)
+- [Bbi](ug_course)
+- [Bfm](ug_course)
+- [Bio](ug_course)
 - [MA](pg_course)
 - [Mcom](pg_course)
 - [MSC](pg_course)
 
 ## intent:eligibility_criteria
-- Can i know the [eligibility](eligible) for [BMM](ug_course)
+- Can i know the [eligibility](eligible) for [Bmm](ug_course)
 - Can i know the [eligibility](eligible) for [Bsc](ug_course)
-- Can i know the [eligibility](eligible) for [BBI](ug_course)
-- Can i know the [eligibility](eligible) for [BFM](ug_course)
-- Can i know the [eligibility](eligible) for [BAF](ug_course)
-- [eligibility](eligible) for [BMS](ug_course)
-- [eligibility](eligible) for [BscIT](ug_course)
-- [eligibility](eligible) for [BscCS](ug_course)
+- Can i know the [eligibility](eligible) for [bi](ug_course)
+- Can i know the [eligibility](eligible) for [Bfm](ug_course)
+- Can i know the [eligibility](eligible) for [Baf](ug_course)
+- [eligibility](eligible) for [Bms](ug_course)
+- [eligibility](eligible) for [Bscit](ug_course)
+- [eligibility](eligible) for [Bsccs](ug_course)
 - [eligibility](eligible) for [Bcom](ug_course)
-- [eligibility](eligible) for [BMM](ug_course)
-- [eligibility](eligible) for [BBI](ug_course)
+- [eligibility](eligible) for [Bmm](ug_course)
+- [eligibility](eligible) for [Bbi](ug_course)
 - [eligibility](eligible) for [Bsc](ug_course)
-- [eligibility](eligible) for [BFM](ug_course)
-- [eligibility](eligible) for [BAF](ug_course)
-- [eligibility](eligible) for [BSC.Biotechnology](ug_course)
+- [eligibility](eligible) for [Bfm](ug_course)
+- [eligibility](eligible) for [Baf](ug_course)
+- [eligibility](eligible) for [Bio](ug_course)
 - whats the [criteria](eligible) for the addmission in [Mcom](pg_course)?
 - whats the [criteria](eligible) for the addmission in [MA](pg_course)?
 - whats the [criteria](eligible) for the addmission in [MSC](pg_course)?
@@ -59,16 +94,10 @@
 - [Mcom](ug_course) course [eligibility](eligible)
 - [MSC](ug_course) course [eligibility](eligible)
 - [BSC.Biotechnology](ug_course) course [eligibility](eligible)
-- [eligibility](eligible) for [BMS](ug_course:ugcb)
-- [eligibility](eligible) for [BscIT](ug_course:ugcb)
-- [eligibility](eligible) for [BscCS](ug_course:ugcb)
-- [eligibility](eligible) for [Bcom](ug_course:ugcb)
-- [eligibility](eligible) for [BMM](ug_course:ugcb)
-- [eligibility](eligible) for [BBI](ug_course:ugcb)
-- [eligibility](eligible) for [Bsc](ug_course:ugcb)
-- [eligibility](eligible) for [BFM](ug_course:ugcb)
-- [eligibility](eligible) for [BAF](ug_course:ugcb)
-- [eligibility](eligible) for [BSC.Biotechnology](ug_course:ugcb)
+- How can I be eligible for [Baf](ug_course)?
+- how can i be elibile for  [Bmm](ug_course)?
+- how can I be eligible for [BscIT](ug_course)?
+- How can i be elibile for [Msc](pg_course)?
 
 ## intent:location_college
 - show me the [address](location)
@@ -78,7 +107,7 @@
 - give me the [address](location) of the [college](facility_type)
 - [where](location) is the [college](facility_type)
 
-## intent:addmission_process
+<!-- ## intent:addmission_process
 - [Admission Process](add_process)
 - [admission](add_process)
 - i want to know the [Admission Process](add_process)
@@ -88,7 +117,7 @@
 - Can i get [admission](add_process) in [MSC](pg_course)
 - [unaided](tof_course)
 - [aided](tof_course)
-- Please  [enroll](add_process) me in [B.A](ug_course)!!
+- Please  [enroll](add_process) me in [B.A](ug_course)!! -->
 
 ## intent:goodbye
 - bye

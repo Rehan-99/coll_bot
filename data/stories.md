@@ -1,30 +1,25 @@
 ## criteria for the addmission
 * greet
   - utter_how_can_i_help
-* eligibility_criteria{"ug_college":"ugcb"}
-  - eligible_form
-  - form{"name": "eligible_form"}
-  - form{"name": null}
-  
-* courses{"ug_course":"BscIT"}
-  - utter_eligibile
+* eligibility_criteria
+* courses
+  - action_eligibility_tracker
+<!-- * courses 
+  - action_eligibility_tracker -->
 * goodbye
   - utter_goodbye  
 ## location of college
 * greet
   - utter_how_can_i_help
-* eligibility_criteria{"ug_college":"ugcb"}
-  - eligible_form
-  - form{"name": "eligible_form"}
-  - form{"name": null}  
+* eligibility_criteria
+  - action_eligibility_tracker
 * location_college{"facility_type":"college","location":"address"}
   - action_location
   - slot{"address":"B.k.Birla College Road nearby shivsena office ,Kalyan West"}
-* courses{"ug_course":"BMM"}
-  - utter_eligibile  
+ 
 * goodbye
   - utter_goodbye  
-## enroll process for unaided
+<!-- ## enroll process for unaided
 * greet
   - utter_how_can_i_help
 * addmission_process  
@@ -46,7 +41,7 @@
 * addmission_process   
   - utter_form_aided
 * goodbye
-  - utter_goodbye
+  - utter_goodbye -->
 
 ## happy path
 * greet
