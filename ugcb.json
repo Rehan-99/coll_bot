@@ -1,5 +1,5 @@
 {
-  "ug_course": [
+  "courses": [
     {
       "name": "Bscit",
       "text": "For admission to B.Sc.(Information Technology) Degree course the candidate should have passed Standard XII Examination conducted by the Maharashtra State Board of Secondary and Higher Secondary education with Mathematics as one of the subjects and should have secured not less than 45% marks in case of students belonging to Open Category and not less than 40% marks in case of students belonging to Reserved Category at first attempt."
@@ -35,12 +35,20 @@
     {
       "name": "Bio",
       "text": "For admission to B.Sc.(Biotechnology) Degree course the candidate should have passed Standard XII Examination with Mathematics as one of the subjects."
-    }
-  ],
-  "pg_course": [
+    },
     {
-      "name": "Msc" ,
+      "name":"Msc",
+      "text": "Admission to M.A, M. Com, M. Com(E-Comm), M. Sc. in Physics, Chemistry, Botany, Zoology, Microbiology, Biotechnology, Computer Science and Information Technology will be on the basis of merit as per the University norms." 
+    },
+    {
+      "name": "Ma",
+      "text": "Admission to M.A, M. Com, M. Com(E-Comm), M. Sc. in Physics, Chemistry, Botany, Zoology, Microbiology, Biotechnology, Computer Science and Information Technology will be on the basis of merit as per the University norms."
+    },
+    {
+      "name":"Mcom" ,
       "text": "Admission to M.A, M. Com, M. Com(E-Comm), M. Sc. in Physics, Chemistry, Botany, Zoology, Microbiology, Biotechnology, Computer Science and Information Technology will be on the basis of merit as per the University norms."
     }
+  
+    
   ]
 }

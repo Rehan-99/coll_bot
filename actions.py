@@ -49,12 +49,16 @@ class ActionEligibilityTracker(Action):
          course = None
          
          for  e in entities:
-         	if e["entity"] == "ug_course":
-         		course = e['value']
-         message = "Please enter the correct course name"		
+                if e["entity"] == "ug_course":
+         		        course = e['value']
+                elif e["entity"] == "pg_course":
+                        course = e['value']
+                else:         
+                        message = "Please enter the correct course name"		
 
+         
 
-         for  data in content["ug_course"]:
+         for  data in content["courses"]:
                if data["name"] == course.title():
                     print(data)
                     message = "Criteria: "+ data["text"]  
@@ -62,26 +66,6 @@ class ActionEligibilityTracker(Action):
          dispatcher.utter_message(message)
 
 
-
-
-
-
-        #  for  e in entities:
-        #  	if e["entity"] == "pg_course":
-        #  		course = e['value']
-        #  message = "Please enter the correct course name"		
-
-        #  for  data in content["pg_course"]:
-        #        if data["name"] == course.title():
-        #             print(data)
-        #             message = "Criteria: "+ data["text"]  
-        #  print(message)				
-        #  dispatcher.utter_message(message)
-
-
-        #  return []        
-         
-         
          
 
          
