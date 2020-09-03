@@ -40,6 +40,32 @@
 - who is your favourite robot?
 - can you help me to build a bot
 
+## intent:college_info
+
+- tell me [something about](info) B.K.Birla college
+- Can i get the more [information](info) on the B.K.Birla college?
+- When was the college [established](info)?
+- please give me the [details](info) about the college!
+- give me the some more [details](info) about the college!
+
+## intent:college_campus
+- [campus](surrond)
+- show me the pictures of college [campus](surrond)
+- tell me how the [campus](surrond) looks like.
+- how big is the [campus](surrond)
+- Does college's [campus](surrond) is surrounded by greeneary?
+- show me the pictures of [campus](surrond)
+- 
+
+## intent:location_college
+- show me the [address](location)
+- show me the [location](location)
+- [address](location)
+- [locate](location)
+- give me the [address](location) of the [college](facility_type)
+- [where](location) is the [college](facility_type)
+- [location](location) of  the [college](facility_type)?
+- please give me the [location](location) of the [college](facility_type)
 
 ## intent:courses
 - [Bsc](ug_course)
@@ -98,26 +124,9 @@
 - how can i be elibile for  [Bmm](ug_course)?
 - how can I be eligible for [BscIT](ug_course)?
 - How can i be elibile for [Msc](pg_course)?
-
-## intent:location_college
-- show me the [address](location)
-- show me the [location](location)
-- [address](location)
-- [locate](location)
-- give me the [address](location) of the [college](facility_type)
-- [where](location) is the [college](facility_type)
-
-<!-- ## intent:addmission_process
-- [Admission Process](add_process)
-- [admission](add_process)
-- i want to know the [Admission Process](add_process)
-- what is the [admission process](add_process)
-- Please  [enroll](add_process) me in !!
-- Can i get [admission](add_process) in [Bcom](ug_course)
-- Can i get [admission](add_process) in [MSC](pg_course)
-- [unaided](tof_course)
-- [aided](tof_course)
-- Please  [enroll](add_process) me in [B.A](ug_course)!! -->
+- [May](ug_course) i know the [eligibility criteria](eligible) for [Bsc](ug_course)
+- How can i be eligible for [Msc](pg_course) course?
+- [Criteria](eligible) for [Bmm](ug_course) course
 
 ## intent:goodbye
 - bye
@@ -126,6 +135,8 @@
 - see you later
 - thanks
 - thankyou
+- thanks for helping me !!
+- Thanks !
 
 ## intent:affirm
 - yes

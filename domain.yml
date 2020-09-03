@@ -13,8 +13,9 @@ intents:
 - location_college
 - eligibility_criteria
 - courses
+- college_info
+- college_campus
 - out_of_scope
-
 entities:
 - add_process
 - ug_course
@@ -23,28 +24,29 @@ entities:
 - location
 - facility_type
 - eligible
-- pg_college
-- ug_college
-
+- info
+- surrond
 slots:
-  facility_eligible:
-    type: unfeaturized
   address:
     type: unfeaturized
-  location:
+  eligible:
     type: text
-  ug_course:
+  facility_eligible:
+    type: unfeaturized
+  info:
+    type: text
+  location:
     type: text
   pg_course:
     type: text
-  eligible: 
+  surrond:
     type: text
-  msg:
-    type: unfeaturized  
-
+  ug_course:
+    type: text
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: Hello I am a College Bot. I can Help you with Information of the college,the
+      courses which are available and also with the addmission process.
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
@@ -59,10 +61,23 @@ responses:
   utter_how_can_i_help:
   - text: Hello I am a College Bot. I can Help you with Information of the college,the
       courses which are available and also with the addmission process.
-#  utter_eligibile:
-#  - text: The eligibility criteria is {facility_eligible}
-  
-
+  utter_give_info:
+  - text: B. K. Birla College of Arts, Science and Commerce (Autonomous), Kalyan a
+      multi faculty premier institution of higher learning, with an enrolment of more
+      than 7,000 students (for UG, PG and Research Programmes) is affiliated to the
+      University of Mumbai. The College was established in 1972, by Kalyan Citizens’
+      Education Society with the blessings of Late Shri B. K. Birla ji and Late Smt.
+      Sarala ji Birla.
+  utter_give_campus:
+  - image: https://www.bkbirlacollegekalyan.com/img/ecosensitivecampus_img04.jpg
+    text: The College is spread over 20 acres of land (including B. K. Birla Public
+      School) in the prime location of Kalyan city. It also promotes sustainable practices
+      in its lush green, serene and as an eco        friendly campus with the help
+      of various remarkable programmes like installation of solar street lights, vermicomposting,
+      energy saving devices, minimizing waste, rain water harvesting, gardening beds,
+      Vriksha Dindi etc. Our latest green initiative is replacing the conventional
+      lighting with LEDs. The college is also focusing on creating awareness about
+      plastic-free campus. "Here are some pictures :"
 actions:
 - utter_greet
 - utter_cheer_up
@@ -71,11 +86,7 @@ actions:
 - utter_goodbye
 - utter_iamabot
 - utter_how_can_i_help
-- utter_eligibile 
 - action_location
+- utter_give_info
+- utter_give_campus
 - action_eligibility_tracker
-#- action_eligible
-
-
-# forms:
-# - eligible_form

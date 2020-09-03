@@ -4,10 +4,13 @@
 * eligibility_criteria
 * courses
   - action_eligibility_tracker
-<!-- * courses 
-  - action_eligibility_tracker -->
+* college_info
+  - utter_give_info
+* college_campus
+  - utter_give_campus   
 * goodbye
-  - utter_goodbye  
+  - utter_goodbye
+
 ## location of college
 * greet
   - utter_how_can_i_help
@@ -16,32 +19,38 @@
 * location_college{"facility_type":"college","location":"address"}
   - action_location
   - slot{"address":"B.k.Birla College Road nearby shivsena office ,Kalyan West"}
- 
-* goodbye
-  - utter_goodbye  
-<!-- ## enroll process for unaided
-* greet
-  - utter_how_can_i_help
-* addmission_process  
-  - utter_ask_course_category
-* addmission_process
-  - utter_ask_field 
-* addmission_process   
-  - utter_form_unaided
+* college_info
+  - utter_give_info
+* college_campus
+  - utter_give_campus
 * goodbye
   - utter_goodbye
 
-## enroll process for aided
+## criteria and location
 * greet
-  - utter_how_can_i_help
-* addmission_process
-  - utter_ask_field   
-* addmission_process  
-  - utter_ask_course_category
-* addmission_process   
-  - utter_form_aided
+    - utter_how_can_i_help
+* location_college{"location":"location","facility_type":"college"}
+    - slot{"location":"location"}
+    - action_location
+    - slot{"address":"B.k.Birla College Road nearby shivsena office ,Kalyan West"}
+* eligibility_criteria{"ug_course":"Bsc","eligible":"eligibility criteria"}
+    - slot{"eligible":"eligibility criteria"}
+    - slot{"ug_course":"Bsc"}
+    - action_eligibility_tracker
+* eligibility_criteria{"pg_course":"Msc"}
+    - slot{"pg_course":"Msc"}
+    - action_eligibility_tracker
+* eligibility_criteria{"eligible":"Criteria","ug_course":"Bmm"}
+    - slot{"eligible":"Criteria"}
+    - slot{"ug_course":"Bmm"}
+    - action_eligibility_tracker
+* out_of_scope
+    - action_default_fallback
 * goodbye
-  - utter_goodbye -->
+    - utter_goodbye
+ 
+* goodbye
+  - utter_goodbye
 
 ## happy path
 * greet
@@ -57,18 +66,7 @@
   - utter_did_that_help
 * affirm
   - utter_happy
-
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
 * deny
-  - utter_goodbye
-
-## say goodbye
-* goodbye
   - utter_goodbye
 
 ## bot challenge
