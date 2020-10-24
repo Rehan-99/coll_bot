@@ -20,7 +20,7 @@
 - i don't care!!!!
 - i do not care how are you
 - again?
-- oh wait i gave you my work [email](contact) address can i change it?
+- oh wait i gave you my work email how can i change it?
 - hang on let me find it
 - stop it, i do not care!!!
 - how come?
@@ -58,14 +58,26 @@
 - 
 
 ## intent:location_college
-- show me the [address](location)
+- show me the [[address](location)](location)
 - show me the [location](location)
-- [address](location)
+- [[address](location)](location)
 - [locate](location)
-- give me the [address](location) of the [college](facility_type)
+- give me the [[address](location)](location) of the [college](facility_type)
 - [where](location) is the [college](facility_type)
 - [location](location) of  the [college](facility_type)?
 - please give me the [location](location) of the [college](facility_type)
+- where is the college [located](location)
+- college is [located at](location)
+- where is college [located](location)
+- [address](location) of college
+- how to [reach](location) college
+- college [location](location)
+- college [address](location)
+- [where](location) is the college
+- how can I [reach](location) college
+- what is the college [address](location)
+- what is the [address](location) of college
+- [location](location)
 
 ## intent:courses
 - [Bsc](ug_course)
