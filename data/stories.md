@@ -1,3 +1,20 @@
+## contact and library info
+* greet
+  - utter_how_can_i_help
+* college_campus
+  - utter_give_campus 
+* library_info
+  - utter_library_info 
+* contact_details    
+  - utter_give_contact
+* college_placement
+  - action_placement     
+* location_college{"facility_type":"college","location":"address"}
+  - action_location
+  - slot{"address":"B.k.Birla College Road nearby shivsena office ,Kalyan West"}  
+* goodbye
+  - utter_goodbye
+
 ## criteria for the addmission
 * greet
   - utter_how_can_i_help
@@ -7,7 +24,11 @@
 * college_info
   - utter_give_info
 * college_campus
-  - utter_give_campus   
+  - utter_give_campus 
+* library_info
+  - utter_library_info  
+* college_placement
+  - action_placement     
 * goodbye
   - utter_goodbye
 
@@ -23,6 +44,8 @@
   - utter_give_info
 * college_campus
   - utter_give_campus
+* library_info
+  - utter_library_info   
 * goodbye
   - utter_goodbye
 

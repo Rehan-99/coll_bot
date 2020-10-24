@@ -13,8 +13,11 @@ intents:
 - location_college
 - eligibility_criteria
 - courses
+- contact_details
 - college_info
 - college_campus
+- library_info
+- college_placement
 - out_of_scope
 entities:
 - add_process
@@ -23,17 +26,24 @@ entities:
 - tof_course
 - location
 - facility_type
+- contact
 - eligible
 - info
 - surrond
+- clgpm
+- lib
 slots:
   address:
     type: unfeaturized
+  clgpm:
+    type: text
   eligible:
     type: text
   facility_eligible:
     type: unfeaturized
   info:
+    type: text
+  lib:
     type: text
   location:
     type: text
@@ -58,9 +68,20 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  utter_placement_info:
+  - text: Here is the link for the detail information for placement [ ]{link}
   utter_how_can_i_help:
   - text: Hello I am a College Bot. I can Help you with Information of the college,the
       courses which are available and also with the addmission process.
+  utter_give_contact:
+  - text: Phone:- (0251) 2230740, 2231294 ; FAX:- (0251) 2231029 ; Email:- principal@bkbirlacollegekalyan.com
+  utter_library_info:
+  - text: College has a separate building for library and timing is 8am to 6pm. Our
+      Best Practices in library:- Group Book Bank Scheme , Regular Infrastructure
+      and collection development , Personalized User Services , Departmental Libraries
+      , In-house computer & information literacy programme , Continuing education
+      and career advancement for staff , Automated Functioning & Services Extension
+      Activities
   utter_give_info:
   - text: B. K. Birla College of Arts, Science and Commerce (Autonomous), Kalyan a
       multi faculty premier institution of higher learning, with an enrolment of more
@@ -89,4 +110,8 @@ actions:
 - action_location
 - utter_give_info
 - utter_give_campus
+- utter_give_contact
+- utter_placement_info
+- utter_library_info
 - action_eligibility_tracker
+- action_placement

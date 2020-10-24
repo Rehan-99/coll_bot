@@ -33,6 +33,23 @@ class ActionLocation(Action):
 
         return [SlotSet("address",address)]
         
+
+class ActionPlacement(Action):
+
+    def name(self) -> Text:
+        return "action_placement"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        
+        Link = "https://www.bkbirlacollegekalyan.com/placementcell.aspx"
+        dispatcher.utter_template("utter_placement_info", tracker,link=Link)
+
+        return []
+
+
         
 class ActionEligibilityTracker(Action):
 

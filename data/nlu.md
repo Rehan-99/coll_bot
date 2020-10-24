@@ -10,7 +10,7 @@
 - please help with my ice cream it's dripping
 - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
 - i want a non dripping ice cream
-- someone call the police i think the bot died
+- someone [call](contact) the police i think the bot died
 - show me a picture of a chicken
 - neither
 - I want french cuisine
@@ -20,7 +20,7 @@
 - i don't care!!!!
 - i do not care how are you
 - again?
-- oh wait i gave you my work email address can i change it?
+- oh wait i gave you my work [email](contact) address can i change it?
 - hang on let me find it
 - stop it, i do not care!!!
 - how come?
@@ -41,7 +41,7 @@
 - can you help me to build a bot
 
 ## intent:college_info
-
+- give me [info][information] about college
 - tell me [something about](info) B.K.Birla college
 - Can i get the more [information](info) on the B.K.Birla college?
 - When was the college [established](info)?
@@ -127,6 +127,52 @@
 - [May](ug_course) i know the [eligibility criteria](eligible) for [Bsc](ug_course)
 - How can i be eligible for [Msc](pg_course) course?
 - [Criteria](eligible) for [Bmm](ug_course) course
+
+
+## intent:contact_details
+- [contact](contact)  info 
+- how to [contact](contact)  college
+- college [fax](contact) number
+- college [email](contact)
+- What is your [contact no](contact) 
+- [Contact number](contact) ?
+- [Email ID](contact)?
+- [fax](contact) number? 
+- how to [call](contact) you
+- College [phone](contact) no?
+- how can i contact you
+- Can i get your [phone number](contact) 
+- how can i [call](contact) you
+- what is college [fax](contact) number
+- [phone number](contact) 
+- what is [email id](contact) of the college?
+- [phone no](contact) 
+- [fax](contact)
+- [call](contact) 
+- [email](contact)
+
+
+## intent:library_info
+- is there any [library](lib)?
+- [library](lib) facility
+- [library](lib) facilities
+- do you have [library](lib)
+- does the college have [library](lib) facility
+- college [library](lib)
+- where can i get [books](lib)?
+- [book](lib) facility
+- Where is [library](lib)?
+- [library](lib)
+- Tell me about [library](lib)
+- how many [libraries](lib)
+
+## intent:college_placement
+- What is college [placement](clgpm)
+- Which [companies](clgpm) visit in college?
+- [companies](clgpm) visit
+- [placement](clgpm)
+- [recruitment](clgpm)
+- [companies](clgpm)
 
 ## intent:goodbye
 - bye
